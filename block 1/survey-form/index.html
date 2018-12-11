@@ -1,0 +1,157 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Uso de Tic's en empresas</title>
+    <meta name="description" content="Uso de Tic's en empresas">
+    <meta name="author" content="SitePoint">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style type="text/css">
+        body {
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 16px;
+            background-color: grey;
+        }
+
+        #main {
+            witdh: 100%;
+            max-width: 700px;
+            text-align: left;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+        }
+
+        #description {
+            text-align: center;
+        }
+
+        .left-align {
+            width: 40%;
+            display: inline-block;
+            text-align: right;
+            padding-right: 10px;
+
+        }
+
+        input[type="checkbox"] {
+            float: left;
+        }
+
+        .checkbox-group {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+        #comentarios {
+            width: 50%;
+        }
+
+        input,
+        textarea,
+        select {
+            padding: 6px;
+        }
+
+        #submit-p {
+            text-align: center;
+        }
+
+        #submit {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Uso de Tic's en empresas</h1>
+    <div id="main">
+        <p id="description">Queremos conocer el uso que hace de la tecnología en su negocio.</p>
+        <form id="survey-form">
+            <p>
+                <div class="left-align">
+                    <label for="name" id="name-label">* Nombre:</label>
+                </div>
+                <input id="name" type="text" name="name" placeholder="Introduzca su nombre" required />
+            </p>
+            <p>
+                <div class="left-align">
+                    <label for="email" id="email-label">* Email:</label>
+                </div>
+                <input id="email" type="email" name="name" placeholder="Introduzca su correo electrónico" required />
+            </p>
+            <p>
+                <div class="left-align">
+                    <label for="age" id="number-label">* Edad:</label>
+                </div>
+                <input id="number" type="number" min="18" max="65" name="age" placeholder="edad" required />
+            </p>
+            <p>
+                <div class="left-align">
+                    <label for="sector" id="sector-label">* Sector:</label>
+                </div>
+                <select id="dropdown" name="sector" class="dropdown">
+                    <option disabled value>Seleccione el sector al que pertenece su empresa</option>
+                    <option value="student">Agricultura y ganadería</option>
+                    <option value="student">Bienes de consumo</option>
+                    <option value="student">Comercio electrónico</option>
+                    <option value="student">Construcción</option>
+                    <option value="student">Deporte y ocio</option>
+                    <option value="student">Energía y medio ambiente</option>
+                    <option value="student">Finanzas, seguros y bienes inmuebles</option>
+                    <option value="student">Internet</option>
+                    <option value="student">Logística y transporte</option>
+                    <option value="student">Medios de comunicación y marketing</option>
+                    <option value="student">Metalurgia y electrónica</option>
+                    <option value="student">Productos químicos y materias primas</option>
+                    <option value="student">Salud e industria farmacéutica</option>
+                    <option value="student">Servicios</option>
+                    <option value="student">Sociedad</option>
+                    <option value="student">Tecnología y telecomunicaciones</option>
+                    <option value="student">Turismo y hostelería</option>
+                    <option value="other">Otros</option>
+                </select>
+            </p>
+            <p>
+                <div class="left-align">
+                    <label for="sector" id="radio-site-label">¿La empresa tiene sitio web?:</label>
+                </div>
+                <label>No<input name="radio-internet-site" value="0" type="radio"></label>
+                <label>Sí<input name="radio-internet-site" value="1" type="radio"></label>
+            </p>
+            <div class="left-align">
+                <label for="sector" id="sector-label">¿Para qué actividades la empresa utiliza internet?:</label>
+            </div>
+            <div class="checkbox-group">
+                <p><label>Comunicación (email)<input name="checkbox-internet-use" value="0" type="checkbox"></label></p>
+                <p><label>Banca electrónica y otros servicios financieros<input name="checkbox-internet-use" value="1"
+                            type="checkbox"></label></p>
+                <p><label>Transacciones con organismos gubernamentales<input name="checkbox-internet-use" value="2"
+                            type="checkbox"></label></p>
+                <p><label>Servicio al cliente<input name="checkbox-internet-use" value="3" type="checkbox"></label></p>
+                <p><label>Distribución productos en línea<input name="checkbox-internet-use" value="4" type="checkbox"></label></p>
+                <p><label>Publicidad y marketing<input name="checkbox-internet-use" value="5" type="checkbox"></label></p>
+                <p><label>Búsqueda de información<input name="checkbox-internet-use" value="6" type="checkbox"></label></p>
+                <p><label>Otras actividades<input name="checkbox-internet-use" value="7" type="checkbox"> <input type="text" /></label></p>
+            </div>
+            <p>
+                <div class="left-align">
+                    <label for="comentarios">Tiene alguna sugerencia o comentario?</label></div>
+                <textarea id="comentarios" placeholder="Comentarios o sugerencias"></textarea>
+
+            </p>
+            <p id="submit-p">
+                <button id="submit" type="submit">Enviar</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
