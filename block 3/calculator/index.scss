@@ -1,0 +1,82 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff") format("woff"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7") format("svg");
+}
+
+html,body,#app, .row, #app .container-flex{
+  height:100%;
+}
+
+#calculator{
+   background-color: grey;
+   border-radius: 14px;
+   padding: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.key{
+  border: none;
+  font-weight: bold;
+  font-size: 2em;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  margin: 0px;
+  max-width: 70px;
+  max-height: 70px;
+  min-width: 50px;
+  min-height: 50px;
+  box-shadow: 2px 2px black;
+  margin: 10px;
+}
+
+.key:active{
+  box-shadow: 0px 0px;
+}
+
+#clear, #back{
+  border-radius: 8px;
+  width: 100%;
+  min-width: 100%;
+}
+
+#back{
+  margin-right: 0;
+}
+
+#clear{
+  color: white;
+  background-color: red;
+  margin-left: 0;
+}
+
+#equals{
+  background-color: blue;
+  color: white;
+}
+
+#multiply, #divide, #add, #subtract{
+  background-color: lightgrey;
+}
+
+#screen {
+  background-color: #b2bdaa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+#display{
+  font-family: digital;
+  font-weight: bold;
+  font-size: 2.5em;
+  height: 1em;
+}
+
+#formula{
+  font-family: digital;
+  font-size: 1.4em;
+  height: 1em;
+}
