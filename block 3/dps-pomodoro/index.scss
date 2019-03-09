@@ -1,0 +1,47 @@
+html,body,#app, .row, #app .container-flex{
+    height:100%;
+  }
+  
+  #clock{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    
+    h1{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+  
+  #break, #session{
+    text-align: center;
+  }
+  
+  
+  #break-length, #session-length{
+    font-size: 2em;
+    padding: 10px;
+    
+  }
+  
+  #break-length, #session-length{
+    display: inline;
+  }
+  
+  button{
+    width: 30px;
+    vertical-align: text-bottom;
+  }
+  
+  
+  #timer-label{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 40px;
+  }
+  
+  #time-left{
+    text-align: center;
+    font-weight: bold;
+    font-size: 4em;
+  }
